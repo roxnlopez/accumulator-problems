@@ -25,14 +25,17 @@ Write function named sum that will take an array of numbers and return the sum o
 Example: if you pass it [1,2,3] then it should return 6 (which is 1 + 2 + 3)
 */
 
-[2, 4, 1, 5, 7].reduce(function (previous, current){
+function sum(array){
 
-  return previous += current;
+var sum = [2, 4, 1, 5, 7];
+
+sum.reduce(function (previous, current){
+
+return previous += current;
 
 }, 0);
 
-
-
+}
 
 
 
