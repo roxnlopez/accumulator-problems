@@ -25,18 +25,17 @@ Write function named sum that will take an array of numbers and return the sum o
 Example: if you pass it [1,2,3] then it should return 6 (which is 1 + 2 + 3)
 */
 
-function sum(array){
 
-var sum = [2, 4, 1, 5, 7];
 
-sum.reduce(function (previous, current){
+var num = [2, 4, 1, 5, 7];
 
-return previous += current;
-
-}, 0);
-
+function sum(numbers){
+  var output = 0
+  for (var i=0; i<numbers.length; i++){
+    output += numbers [i]
+  }
+  return output;
 }
-
 
 
 
@@ -51,6 +50,14 @@ Example: if you pass it [1,2,3] then it should return [2,4,6]
 */
 
 
+function doubleNumbers(){
+
+  var array = 0;
+
+  return doubleNumbers.map(function())
+
+
+}
 
 
 
