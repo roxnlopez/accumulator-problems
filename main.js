@@ -50,17 +50,17 @@ Example: if you pass it [1,2,3] then it should return [2,4,6]
 */
 
 
-function doubleNumbers(){
+var originalArray = [1, 2, 3, 4];
 
-  var array = 0;
-
-  return doubleNumbers.map(function())
-
-
+function doubleNumbers(array) {
+  var newArray = [];
+  for (var i = 0; i < array.length; i++) {
+    newArray[i] = array[i] * 2;
+  }
+  return newArray;
 }
 
-
-
+doubleNumbers(originalArray)
 
 
 
