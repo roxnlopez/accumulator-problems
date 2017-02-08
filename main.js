@@ -79,11 +79,13 @@ Examples:
 - if you call multiplyNumbers([1,2,3], 5) you'd get [5,10,15]
 */
 
-
-
-
-
-
+var i;
+function multiplyNumbers(previous, i){
+   return previous.map(function(item){
+   return item*i;
+ },0);
+}
+console.log(multiplyNumbers ([2,4,6]),2);
 
 
 
@@ -97,12 +99,19 @@ Write function named doubleLetters that will take a string and double every lett
 Example: if you pass it "abc" then it should return "aabbcc"
 */
 
+var s = "abc";
 
+function doubleLetters(s){
 
+  var s1 = "";
+  for(var i=0; i<s.length; i++){
+    s1 += s[i]+s[i];
+  }
+  return s1;
 
+}
 
-
-
+console.log(doubleLetters(s));
 
 
 
@@ -117,6 +126,7 @@ Example: if you pass it ["a", "b", "c"] and ["d", "e", "f"] then it should retur
 
 NOTE: you can assume each input will be the same length
 */
+
 
 
 
